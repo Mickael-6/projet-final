@@ -1,0 +1,74 @@
+ :root {
+     --bs-success-rgb: #f04848!important;
+ }
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+     font-family: Apple Chancery, cursive;
+ }
+#topNavbar{
+    background-color: #f04848 !important;
+}
+
+ .fc-event,
+ .fc-event-dot {
+     background-color: #ebc3c7 !important;
+ }
+
+ .btn-info.text-light:hover,
+ .btn-info.text-light:focus {
+     background: #000;
+ }
+
+/* Styles pour le bouton "prev" */
+.fc-prev-button,
+.fc-next-button,
+.fc-today-button,
+.fc-dayGridMonth-button,
+.fc-dayGridWeek-button,
+.fc-list-button {
+    background-color: #f04848 !important;
+}
+
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: #ebc3c7 !important;
+    /* Couleur de bordure rouge */
+    border-style: solid;
+    border-width: 1px !important;
+}
+
+#add_event_btn{
+    background-color: #f04848;
+}
+ .result {
+     width: 100%;
+     min-height: 200px;
+     padding: 10px;
+     border: 1px solid gray;
+     border-radius: 5px;
+     font-size: 18px;
+     font-weight: 500;
+     margin-bottom: 20px;
+ }
+
+ .record img {
+     width: 30px;
+     height: 30px;
+     display: none;
+ }
+
+ .record.recording img {
+     display: block;
+ }
+
+ .record.recording ion-icon {
+     display: none;
+ }

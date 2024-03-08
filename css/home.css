@@ -1,0 +1,139 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    user-select: none;
+    scrollbar-width: none;
+}
+
+
+
+.content {
+    background-image: url('../assets/main-html/background2_2png.png');
+    background-size: cover; /* La propriété cover permet de couvrir tout l'élément tout en préservant les proportions de l'image */
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 130px;
+    font-size: 17px;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.727);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+
+.main-container {
+    margin: 0 130px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-content h2 {
+    font-size: 66px;
+    padding: 20px 0;
+}
+
+.left-content h3 {
+    color: rgba(0, 0, 0, 0.473);
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.left-content p {
+    color: rgba(0, 0, 0, 0.473);
+    font-size: 13px;
+}
+
+#see-more {
+    color: white;
+    font-size: 17px;
+    background-color: #f04848;
+    margin: 80px 0;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#see-more a {
+color: white;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.066);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer #note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 250px;
+    margin:  0 20px 0 50px ;
+}
+
+footer #calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 250px;
+    margin:  0 50px 0 20px;
+}
+
+footer img{
+    margin: 20px;
+    height: 200px;
+    width: 200px; /* La propriété cover permet de couvrir tout l'élément tout en préservant les proportions de l'image */
+}
+
+footer .calendar-content, .note-content {
+    padding: 10px;
+}
+
+footer h3, p, a{
+    padding: 0 0 15px 0;
+}
+
+footer h3 {
+    color: rgba(0, 0, 0, 0.59);
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+footer a {
+    color: #f04848;
+}
+
