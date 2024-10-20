@@ -32,7 +32,7 @@ function speechToText() {
     recognition.lang = inputLanguage.value;
     recognition.interimResults = true;
     recordBtn.classList.add("recording");
-    recordBtn.querySelector("p").innerHTML = "Stop Listening...";
+    recordBtn.querySelector("p").innerHTML = "Stop...";
     recognition.start();
     recognition.onresult = (event) => {
       const speechResult = event.results[0][0].transcript;
@@ -85,7 +85,7 @@ recordBtn.addEventListener("click", () => {
 
 function stopRecording() {
   recognition.stop();
-  recordBtn.querySelector("p").innerHTML = "Start Listening";
+  recordBtn.querySelector("p").innerHTML = "Commencer la note";
   recordBtn.classList.remove("recording");
   recording = false;
 }

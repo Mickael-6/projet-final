@@ -19,16 +19,16 @@ require_once("../lib/user_signup.php");
         <!-- Formulaire d'inscription -->
         <div id="a-container" class="container a-container">
             <form id="a-form" class="form" method="POST">
-                <h2 class="form__title title">Create Account</h2>
+                <h2 class="form__title title">Créer un compte</h2>
                 <!-- Icônes et champ de saisie pour le nom, l'email et le mot de passe -->
                 <div class="form__icons">
                     <img class="form__icon" src="data:image/svg+xml;base64,PD94bWw... (truncated)" alt="">
                     <!-- Autres icônes -->
                 </div>
-                <span class="form__span">or use email for registration</span>
-                <input class="form__input" type="text" placeholder="Name" name="name">
+          
+                <input class="form__input" type="text" placeholder="Nom" name="name">
                 <input class="form__input" type="text" placeholder="Email" name="email">
-                <input class="form__input" type="password" placeholder="Password" name="mdp">
+                <input class="form__input" type="password" placeholder="Mot de passe" name="mdp">
                 <button class="form__button button submit">S'inscrire</button>
             </form>
         </div>
@@ -52,9 +52,9 @@ require_once("../lib/user_signup.php");
             <div class="switch__circle switch__circle--t"></div>
             
             <div class="switch__container" id="switch-c1">
-                <h2 class="switch__title title">Welcome Back !</h2>
-                <p class="switch__description description">To keep connected with us please login with your personal info</p>
-                <button class="switch__button button switch-btn"><a href="../user_login_page/user_login_page.php">se connecter</a></button>
+                <h2 class="switch__title title">Bienvenue !</h2>
+                <p class="switch__description description">Pour rester connecté, veuillez vous connecter avec vos informations.</p>
+                <button class="switch__button button switch-btn"><a href="../user_login_page/user_login_page.php">Se connecter</a></button>
             </div>
             
             <!-- <div class="switch__container" id="switch-c2">

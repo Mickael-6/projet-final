@@ -42,7 +42,10 @@ if (isset($_SESSION['flash_message'])) {
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./fullcalendar/lib/main.min.js"></script>
-
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -51,19 +54,20 @@ if (isset($_SESSION['flash_message'])) {
 
 <header class="d-flex flex-wrap justify-content-center p-4 mb-4 border-bottom bg-danger" id="header">
         <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none" href="">
-                    Calendar <img src="" width="65px" />
+                    <h1>Voice-Note</h1> <img src="" width="65px" />
                 </a>
    
                     <ul class="nav nav-pills">
+                    <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../home.php">Accueil</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="../index.php">Notes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" aria-current="page" href="../note_page/user_note.php">Mes Notes</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="">Calendar</a>
-                        </li>
+                    
                         <li class="nav-item">
                      <?php
                         // Check if the user is logged in
@@ -73,7 +77,7 @@ if (isset($_SESSION['flash_message'])) {
                            
 
                             // Display "Logout" and user's name
-                            echo '<a class="nav-link text-white" href="../lib/logout.php"><img src="./assets/photo-de-profil.png" width="30px" /> Bienvenue ' . $_SESSION['name'] . '<i class="fa-solid fa-user-check"></i> Logout</a>';
+                            echo '<a class="nav-link text-white" href="../lib/logout.php"> Bienvenue ' . $_SESSION['name'] . ' Logout</a>';
                         }
                         else {
                             // User is not logged in: display "Login"

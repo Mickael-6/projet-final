@@ -36,7 +36,7 @@ require_once("../lib/user_login.php");
                     <!-- Autres icônes -->
                 </div>
                 <input class="form__input" type="text" placeholder="Email" name="email">
-                <input class="form__input" type="password" placeholder="Password" name="mdp">
+                <input class="form__input" type="password" placeholder="Mot de passe" name="mdp">
                 <button type="submit" class="form__button button submit">Se connecter</button>
             </form>
         </div>
@@ -46,7 +46,7 @@ require_once("../lib/user_login.php");
                         
             <div class="switch__container" id="switch-c2">
                 <h2 class="switch__title title">Bienvenue !</h2>
-                <p class="switch__description description">Enter your personal details and start journey with us</p>
+                <p class="switch__description description">Saisissez vos informations et commencez votre aventure avec nous.</p>
                 <button class="switch__button button switch-btn"><a href="../sign_up/sign_up.php">S'inscrire</a></button>
             </div>
         </div>

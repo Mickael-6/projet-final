@@ -31,7 +31,7 @@ if (!empty($_POST)) {
 
                 // Rediriger vers la page d'accueil
                 // header("Location: ../index.php");
-                header("location:../calendar_page/calendar.php");
+                header("location:../home.php");
                 exit();
             } else {
                 // Mot de passe incorrect

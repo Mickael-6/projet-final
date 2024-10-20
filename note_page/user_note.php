@@ -4,7 +4,7 @@ if(session_status() == PHP_SESSION_NONE){
 }
 require_once("../lib/login_bdd.php");
 require_once("../lib/display_user_note.php");
-
+require_once("../lib/select_user_by_name.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,10 @@ require_once("../lib/display_user_note.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/user_note.css">
 </head>
 <body>
@@ -20,10 +24,19 @@ require_once("../lib/display_user_note.php");
     
     <header>
         <nav>
-            <a href="http://localhost/projet-final/home.php" class="title">Voice-Note</a>
+        <h1>Voice-Note</h1>
             <ul>
-            
+                <li><a href="http://localhost/projet-final/home.php">Accueil</a></li>
                 <li><a href="../calendar_page/calendar.php">Calendrier</a></li>
+                <?php if (empty($_SESSION)) { ?>
+            <!-- Bouton de connexion s'il n'y a pas de session active -->
+            <button class="connexion" onclick="window.location.href='user_login_page/user_login_page.php'">Connexion</button>
+        <?php } else {  ?>
+            <!-- Affichage du message de bienvenue et bouton de déconnexion si une session est active -->
+            <p class="bienvenue">Bienvenue <?php echo $resultat_user_by_id['name']?><i class="fa-solid fa-user-check"></i></p>
+            <button class="deconnexion" onclick="window.location.href='../lib/logout.php'" ><i class="fa-solid fa-circle-minus"></i> Deconnexion</button>
+        <?php }  ?>
+
             </ul>
             
         </nav>
@@ -85,7 +98,7 @@ require_once("../lib/display_user_note.php");
         <div class="addNote">
     <a href="../index.php">
 
-        <button class="btn btn-circle" id="add_note_btn"> Add Note</button>
+        <button class="btn btn-circle" id="add_note_btn">Ajouter une note</button>
     </a>
     </div>
     </div>

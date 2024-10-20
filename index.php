@@ -20,7 +20,9 @@ require_once("lib/note_add_database.php");
 
     <!-- Inclusion d'une feuille de style CSS -->
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <!-- Titre de la page -->
     <title>Speech to Text</title>
 </head>
@@ -29,8 +31,10 @@ require_once("lib/note_add_database.php");
 
     <header>
         <nav>
-            <a href="http://localhost/projet-final/home.php" class="title">Voice-Note</a>
+            
+             <h1>Voice-Note</h1>
             <ul>
+            <li><a href="http://localhost/projet-final/home.php">Accueil</a></li>
                 <li><a href="http://localhost/projet-final/note_page/user_note.php">Mes notes</a></li>
                
                 <li><a href="http://localhost/projet-final/calendar_page/calendar.php">Calendrier</a></li>
@@ -50,11 +54,11 @@ require_once("lib/note_add_database.php");
     <section class="main-container">
 
        
-    <img class="imgred" src="./assets/main-html/undraw_exciting_news_re_y1iw.svg" alt="">
+    <img class="imgred" src="./assets/main-html/undraw_exciting_news_re_y1iw.svg" alt="Illustration d'une personne jetant une feuille ou une note en l'air avec excitation">
         <!-- Conteneur principal de la page -->
         <div class="container">
             <!-- En-tête de la page -->
-            <p class="heading">Speech to Text</p>
+
         
 
             <!-- Options pour la langue -->
@@ -75,11 +79,11 @@ require_once("lib/note_add_database.php");
                     <ion-icon name="mic-outline"></ion-icon>
                     <img src="bars.svg" alt="" />
                 </div>
-                <p>Start Listening</p>
+                <p>Commencer la note</p>
             </button>
 
             <!-- Affichage du résultat -->
-            <p class="heading">Result :</p>
+         
             
             <form method="POST">
         
@@ -97,8 +101,8 @@ require_once("lib/note_add_database.php");
                 </div>
             </div>
             
-            <button class="login100-form-btn">
-                add database
+            <button class="btn-save">
+                Sauvegarder
             </button>
             </form>
         
@@ -106,16 +110,16 @@ require_once("lib/note_add_database.php");
             <div class="buttons">
                 <button class="btn clear">
                     <ion-icon name="trash-outline"></ion-icon>
-                    <p>Clear</p>
+                    <p>Effacer</p>
                 </button>
                 <button class="btn download">
                     <ion-icon name="cloud-download-outline"></ion-icon>
-                    <p>Download</p>
+                    <p>Télécharger</p>
                 </button>
             </div>
         </div>
 
-    <img class="imgnote"  src="./assets/main-html/undraw_ideas_flow_re_bmea.svg" alt="">
+    <img class="imgnote"  src="./assets/main-html/undraw_ideas_flow_re_bmea.svg" alt="Illustration d'une personne jetant des feuilles ou des notes en l'air">
 
     </section>
 

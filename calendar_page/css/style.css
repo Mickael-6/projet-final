@@ -12,6 +12,8 @@
     background-color: #f04848 !important;
 }
 
+
+
  .fc-event,
  .fc-event-dot {
      background-color: #ebc3c7 !important;
@@ -31,6 +33,14 @@
 .fc-list-button {
     background-color: #f04848 !important;
 }
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: #F28989 !important;
+   
+}
+
+
+
 
 table,
 tbody,
@@ -39,11 +49,19 @@ tfoot,
 th,
 thead,
 tr {
-    border-color: #ebc3c7 !important;
+    border-color: #f77e7e  !important;
     /* Couleur de bordure rouge */
     border-style: solid;
     border-width: 1px !important;
 }
+h1 {
+    color: rgba(0, 0, 0, 0.727);
+  
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+  }
+  
 
 #add_event_btn{
     background-color: #f04848;
